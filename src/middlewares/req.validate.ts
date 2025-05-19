@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { validationResult } from 'express-validator';
+import { HttpStatus } from '../utils/httpStatus';
 
 export const validateRequest = (
   req: Request,
@@ -8,7 +9,7 @@ export const validateRequest = (
 ): void => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
-    res.status(400).json({ errors: errors.array() });
+    res.status(HttpStatus.BAD_REQUEST).json({ errors: errors.array() });
     return;
   }
   next();

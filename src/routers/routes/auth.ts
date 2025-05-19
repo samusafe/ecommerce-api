@@ -4,7 +4,7 @@ import {
   loginValidator,
   registerValidator,
 } from '../../validators/auth.validator';
-import { validateRequest } from '../../middlewares/validateRequest';
+import { validateRequest } from '../../middlewares/req.validate';
 
 const router = Router();
 

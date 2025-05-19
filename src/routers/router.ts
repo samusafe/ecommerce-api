@@ -6,7 +6,4 @@ interface Route {
   router: Router;
 }
 
-export const routes: Route[] = [
-  { path: '/api/auth', router: authRoutes },
-  { path: '/api/admin', router: authRoutes },
-];
+export const routes: Route[] = [{ path: '/api/auth', router: authRoutes }];
