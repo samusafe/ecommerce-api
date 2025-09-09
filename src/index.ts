@@ -12,8 +12,7 @@ const PORT = config.port;
 // Middlewares
 app.use(
   cors({
-    // origin: '*', // Replace with your frontend URL
-    origin: '*',
+    origin: config.allowedOrigins,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   }),

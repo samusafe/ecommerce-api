@@ -1,5 +1,5 @@
-import { en } from './locales/en';
-import { pt } from './locales/pt';
+import en from './locales/en.json';
+import pt from './locales/pt.json';
 
 export const locales = {
   en,
