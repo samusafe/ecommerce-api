@@ -1,26 +1,26 @@
 {
-  "name": "trelloapi",
+  "name": "ecommerce-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "dev": "nodemon --watch src --exec ts-node src/index.ts",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,css,md}\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/samusafe/TrelloAPI.git"
+    "url": "git+https://github.com/samusafe/ecommerce-api.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/samusafe/TrelloAPI/issues"
+    "url": "https://github.com/samusafe/ecommerce-api/issues"
   },
-  "homepage": "https://github.com/samusafe/TrelloAPI#readme",
+  "homepage": "https://github.com/samusafe/ecommerce-api#readme",
   "dependencies": {
     "@prisma/client": "^6.8.2",
     "bcrypt": "^6.0.0",
@@ -36,6 +36,7 @@
     "@types/cors": "^2.8.18",
     "@types/express": "^5.0.2",
     "@types/node": "^22.15.18",
+    "nodemon": "^3.1.10",
     "prettier": "^3.5.3",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
