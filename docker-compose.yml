@@ -26,7 +26,8 @@ services:
   ecommerce-api-dev:
     profiles: ['development']
     image: ecommerce-api-dev:latest
-    build: .
+    build:
+      context: .
     environment:
       NODE_ENV: development
       BACKEND_PORT: ${BACKEND_PORT}
@@ -38,7 +39,7 @@ services:
       - '3000:3000'
     volumes:
       - .:/app
-    command: npm run dev
+    command: npm run start:dev
     depends_on:
       - db-dev
 
@@ -68,7 +69,8 @@ services:
   ecommerce-api-prod:
     profiles: ['production']
     image: ecommerce-api-prod:latest
-    build: .
+    build:
+      context: .
     environment:
       NODE_ENV: production
       BACKEND_PORT: ${BACKEND_PORT}

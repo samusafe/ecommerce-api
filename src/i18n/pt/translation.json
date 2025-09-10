@@ -1,0 +1,17 @@
+{
+  "REQUEST": {
+    "SUCCESS": {},
+    "ERROR": {
+      "INVALID_JSON": "Corpo JSON inválido"
+    }
+  },
+  "USER": {
+    "SUCCESS": {
+      "REGISTER": "Utilizador registado com sucesso",
+      "LOGIN": "Utilizador autenticado com sucesso"
+    },
+    "ERROR": {
+      "INVALID_CREDENTIALS": "Credenciais inválidas"
+    }
+  }
+}

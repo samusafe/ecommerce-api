@@ -1,0 +1,17 @@
+{
+  "REQUEST": {
+    "SUCCESS": {},
+    "ERROR": {
+      "INVALID_JSON": "Invalid JSON body"
+    }
+  },
+  "USER": {
+    "SUCCESS": {
+      "REGISTER": "User registered successfully",
+      "LOGIN": "User logged in successfully"
+    },
+    "ERROR": {
+      "INVALID_CREDENTIALS": "Invalid credentials"
+    }
+  }
+}
